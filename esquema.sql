@@ -43,10 +43,6 @@ CREATE TABLE discos(
     REFERENCES artistas(artista_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
-  genero INTEGER UNSIGNED, FOREIGN KEY (genero)
-    REFERENCES generos(genero_id)
-    ON DELETE RESTRICT
-    ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
