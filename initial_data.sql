@@ -276,14 +276,3 @@ INSERT INTO canciones (nombre, duarcion, disco, artista) VALUES
   ("Venom", "4:55 min", "Encore","Eminem", 30000),
   ("Return to love", "4:32 min", "Halcyon","Ellie Goulding", 30000),
 
-INSERT INTO playlist (artista_id, disco_id, cancion_id, genero_id, pais_id) VALUES
-  (1,1,1),
-  (2,2,1),
-  (2,5,1),
-  (3,3,2),
-  (3,4,2),
-  (4,2,1),
-  (5,1,1),
-  (5,2,1),
-  (5,5,1);
-
