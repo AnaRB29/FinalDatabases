@@ -249,30 +249,30 @@ INSERT INTO pais (nombre, iso2) VALUES
   ("Zimbabue","ZW");
 
   INSERT INTO generos (nombre, instrumentacion, pais) VALUES
-  ("Pop", "Guitarra y bajo", "US y UK", 30000,5),
- ("Pop", "Guitarra y bajo", "US y UK", 30000,5),
-("Pop", "Guitarra y bajo", "US y UK", 30000,5),
+  ("Pop", "Guitarra y bajo", "US y UK"),
+  ("Pop", "Guitarra y bajo", "US y UK"),
+  ("Pop", "Guitarra y bajo", "US y UK"),
 
-INSERT INTO artistas (nombre, nombre de nacimiento, fecha de nacimiento, año de inicio, pais, genero) VALUES
-  ("John Legend", "John Roger Stephens", "28-dic-78","2001","US", "P", 30000,5),
-  ("Michael Jackson", "Michael Joseph Jackson", "29-ago-58", "1964-2009", "US",	"J", 30000,5),
-  ("Zara Larsson", "Zara Maria Larsson", "16-dic-97", "2008", "SE", "HP", 30000,5),
-  ("Eminem", "Marshall Bruce Mathers III", "17-oct-72", "1988", "US", "EP", 30000,5),
-  ("Ellie Goulding", "Elena Jane Goulding", "30-dic-86", "2007", "UK", "R", 30000,5),
+INSERT INTO artistas (nombre, nombre_de_nacimiento, fecha_de_nacimiento, año_de_inicio, pais, genero) VALUES
+  ("John Legend", "John Roger Stephens", "28-dic-78","2001","US", "P"),
+  ("Michael Jackson", "Michael Joseph Jackson", "29-ago-58", "1964-2009", "US",	"J"),
+  ("Zara Larsson", "Zara Maria Larsson", "16-dic-97", "2008", "SE", "HP"),
+  ("Eminem", "Marshall Bruce Mathers III", "17-oct-72", "1988", "US", "EP"),
+  ("Ellie Goulding", "Elena Jane Goulding", "30-dic-86", "2007", "UK", "R"),
 
 
-INSERT INTO discos (nombre, fecha de lanzamiento, cantidad de canciones, artista) VALUES
-  ("Love in the future", "30-ago-13", "John Legend", "16 canciones", 141),
-  ("Bad", "31-ago-87", "Michael Jackson", "11 canciones", 141),
-  ("So Good", "17-mar-17", "Zara Larsson", "15 canciones", 141),
-  ("Encore", "12-nov-04", "Eminem", "23 canciones", 141),
-  ("Halcyon", "5-oct-17", "Ellie Goulding", "18 canciones", 141),
+INSERT INTO discos (nombre, fecha_de_lanzamiento, cantidad_de_canciones, artista) VALUES
+  ("Love in the future", "30-ago-13", "John Legend", "16 canciones"),
+  ("Bad", "31-ago-87", "Michael Jackson", "11 canciones"),
+  ("So Good", "17-mar-17", "Zara Larsson", "15 canciones"),
+  ("Encore", "12-nov-04", "Eminem", "23 canciones"),
+  ("Halcyon", "5-oct-17", "Ellie Goulding", "18 canciones"),
 
 
 INSERT INTO canciones (nombre, duarcion, disco, artista) VALUES
-  ("Green Light", "5:41 min", "Love in the future","John Legend", 30000),
-  ("Smooth Criminal", "4:16 min", "Bad","Michael Jackson", 30000),
-  ("WOW", "3:00 min", "So Good", "Zara Larsson", 30000),
-  ("Venom", "4:55 min", "Encore","Eminem", 30000),
-  ("Return to love", "4:32 min", "Halcyon","Ellie Goulding", 30000),
+  ("Green Light", "5:41 min", "Love in the future","John Legend"),
+  ("Smooth Criminal", "4:16 min", "Bad","Michael Jackson"),
+  ("WOW", "3:00 min", "So Good", "Zara Larsson"),
+  ("Venom", "4:55 min", "Encore","Eminem"),
+  ("Return to love", "4:32 min", "Halcyon","Ellie Goulding"),
 

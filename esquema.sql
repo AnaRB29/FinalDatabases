@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS tienda;
+CREATE DATABASE IF NOT EXISTS playlist;
 
-USE tienda;
+USE playlist;
 
 CREATE TABLE paises(
   pais_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -21,8 +21,8 @@ CREATE TABLE generos(
 CREATE TABLE artistas(
   artista_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(50) UNIQUE NOT NULL,
-  nombre de nacimiento VARCHAR(50) NOT NULL,
-  fecha de nacimiento DATETIME NOT NULL,
+  nombre_de_nacimiento VARCHAR(50) NOT NULL,
+  fecha_de_nacimiento DATETIME NOT NULL,
   año de inicio DATETIME NOT NULL,
   pais INTEGER UNSIGNED, FOREIGN KEY (pais)
     REFERENCES paises(pais_id)
@@ -37,8 +37,8 @@ CREATE TABLE artistas(
 CREATE TABLE discos(
   disco_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(40) NOT NULL,
-  fecha de lanzamiento DATETIME NOT NULL,
-  cantidad de canciones INTEGER NOT NULL,
+  fecha_de_lanzamiento DATETIME NOT NULL,
+  cantidad_de_canciones INTEGER NOT NULL,
   artista INTEGER UNSIGNED FOREIGN KEY (artista),
     REFERENCES artistas(artista_id)
     ON DELETE RESTRICT
