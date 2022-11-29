@@ -23,12 +23,14 @@ CREATE TABLE artistas(
   nombre VARCHAR(50) UNIQUE NOT NULL,
   nombre_de_nacimiento VARCHAR(50) NOT NULL,
   fecha_de_nacimiento DATETIME NOT NULL,
-  año de inicio DATETIME NOT NULL,
-  pais INTEGER UNSIGNED, FOREIGN KEY (pais)
+  año_de_inicio YEAR NOT NULL,
+  pais INTEGER UNSIGNED, 
+  	FOREIGN KEY (pais)
     REFERENCES paises(pais_id)
     ON DELETE RESTRICT
-    ON UPDATE CASCADE
-  genero INTEGER UNSIGNED, FOREIGN KEY (genero)
+    ON UPDATE CASCADE,
+  genero INTEGER UNSIGNED, 
+  	FOREIGN KEY (genero)
     REFERENCES generos(genero_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
@@ -39,7 +41,8 @@ CREATE TABLE discos(
   nombre VARCHAR(40) NOT NULL,
   fecha_de_lanzamiento DATETIME NOT NULL,
   cantidad_de_canciones INTEGER NOT NULL,
-  artista INTEGER UNSIGNED FOREIGN KEY (artista),
+  artista INTEGER UNSIGNED,
+  	FOREIGN KEY (artista)
     REFERENCES artistas(artista_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
@@ -51,12 +54,9 @@ CREATE TABLE canciones(
   cancion_id INTEGER UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(40) NOT NULL,
   duracion FLOAT NOT NULL,
- discos INTEGER UNSIGNED, FOREIGN KEY (disco)
+ 	disco INTEGER UNSIGNED,
+ 	FOREIGN KEY (disco)
     REFERENCES discos(disco_id)
-    ON DELETE RESTRICT
-    ON UPDATE CASCADE
- artista INTEGER UNSIGNED FOREIGN KEY (artista),
-    REFERENCES artistas(artista_id)
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
